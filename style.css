@@ -1,0 +1,26 @@
+body{
+    margin: 10px;
+}
+
+.btn-add{
+    float:right;
+    cursor: pointer;
+}
+
+#result{
+    color: red !important;;
+}
+
+.hide {
+    display: none;
+}
+
+.wrapper {
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 20rem!important;
+    width: 20rem!important;
+}

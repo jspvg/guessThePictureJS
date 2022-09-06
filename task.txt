@@ -1,0 +1,23 @@
+Cilj ovog zadatka je da napravimo mali kviz. Korisniku se prikazuje slika, te ispod treba unijeti sta je prikazano na slici. Na osnovu toga, program racuna bodove.
+
+U `script.js` primjetiti cete niz `items`. U ovom nizu svaki objekat predstavlja "pitanje" na kvizu. Pitanje se sastoji od slike koju treba prikazati (image), dok su answers tacni odgovori. Dakle, ono sto korisnik unese u input `answerInput`, treba porediti sa ovim nizom answers. Te ako je npr za prvo pitanje unio cat, to se smatra tacnim.Sliku ucitavate u image tag sa id-em `image`.
+
+Klikom na dugme `Next` treba da se prikaze slijedece pitanje. Korisnik ne mora uopste nista unijeti da bi presao na iduce pitanje (ali se u tom slucaju takav odgovor smatra netacnim). Kada dodje na zadnje pitanje i odabere `Next`, treba da se konacni rezultat prikaze u heading-u sa id-em `result` (da bi se isti prikazao potrebno mu je ukloniti klasu `hide`).
+
+Takodjer, klikom na dugme `Restart` igra treba da se restarta (prikazuje se prvo pitanje, resetuju se bodovi na nula, sakriva se konacni rezultat).
+Za dodatnu vjezbu:
+- Implementirati i Previous button, tako da se korisnik moze vratiti nazad na pitanje i revidirati odgovore. Ali ovo zahtjeva nesto tezu kalkulaciju odgovora. (Ideja: svakom objektu mozete dodati property `osvojenoBodova`)
+- Dodati opciju da se pamti history bodova (mozete uz te informacije pohranjivati datum i vrijeme kad je kviz odigran pa napraviti ljestvicu.)
+
+//English translation
+
+The goal of this task is to make a small quiz. The user is shown a picture, and what is shown in the picture should be entered below. Based on this, the program calculates points.
+
+In `script.js` you will notice a series of `items`. In this array, each object represents a "question" on the quiz. The question consists of an image to be displayed, while the answers are the correct answers. Therefore, what the user enters in the input `answerInput`, should be compared with this series of answers. And if, for example, he entered cat for the first question, it is considered correct. You load the image in the image tag with the id `image`.
+
+By clicking on the `Next' button, the next question should be displayed. The user does not have to enter anything at all to move on to the next question (but in that case such an answer is considered incorrect). When he comes to the last question and selects `Next', the final result should be displayed in the heading with the id `result' (in order to display it, he needs to remove the `hide` class).
+
+Also, by clicking the ``Restart'' button, the game should be restarted (the first question is displayed, the points are reset to zero, the final result is hidden).
+For extra practice:
+- Implement the Previous button, so that the user can go back to the question and revise the answers. But this requires somewhat more difficult calculation of the answer. (Idea: you can add property `obsvojenoBodova` to each object)
+- Add the option to remember the history of points (you can save the date and time when the quiz was played with this information and make a ranking.)
